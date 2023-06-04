@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>BOOTSTRAP TASK 3</title>
+        <style>
+            form{
+                background-color: rgb(194, 189, 189);
+                height: 820px;
+            }
+        </style>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
+    <body>
+        <div class="container mx-auto col-5 py-5">
+            <form class=" row needs-validation" novalidate>
+                <div class="row pt-3 pe-2">
+                    <div class="col-3 text-center fw-bold" id="d1">First Name</div>
+                    <div class="col-9">
+                        <div class="input-group has-validation">
+                            <span class="input-group-text">
+                                <i class="fa-solid fa-user"></i>
+                            </span>
+                            <input type="text" id="t1" class="form-control" placeholder="First Name" required>
+                            
+                            <div class="invalid-feedback">
+                                Please supply your first name
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row pt-3 pe-2">
+                    <div class="col-md-3 text-center fw-bold" id="d2">Last Name</div>
+                    <div class="col-md-9">
+                        <div class="input-group has-validation">
+                            <span class="input-group-text">
+                                <i class="fa-solid fa-user"></i>
+                            </span>
+                            <input type="text" id="t2" class="form-control" placeholder="Last Name" required>
+                            <div class="invalid-feedback">
+                                Please supply your last name
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row pt-3 pe-2">
+                    <div class="col-md-3 text-center fw-bold" id="d3">E-mail</div>
+                    <div class="col-md-9">
+                        <div class="input-group has-validation">
+                            <span class="input-group-text" id="inputGroupPrepend">
+                                <i class="fa-solid fa-envelope"></i>
+                            </span>
+                            <input type="text" id="t3" class="form-control" placeholder="E-Mail Address" required>
+                            <div class="invalid-feedback">
+                            Please suppy your email address
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row pt-3 pe-2">
+                    <div class="col-md-3 text-center fw-bold" id="d4">Phone #</div>
+                    <div class="col-md-9">
+                        <div class="input-group has-validation">
+                            <span class="input-group-text">
+                                <i class="fa-solid fa-phone"></i>
+                            </span>
+                            <input type="text" id="t4" class="form-control" placeholder="(845)555-1212" required>
+                            <div class="invalid-feedback">
+                                Please supply your phone number.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row pt-3 pe-2">
+                    <div class="col-md-3 text-center fw-bold" id="d5">Address</div>
+                    <div class="col-md-9">
+                        <div class="input-group has-validation">
+                            <span class="input-group-text">
+                                <i class="fa-solid fa-house"></i>
+                            </span>
+                            <input type="text" id="t5" class="form-control" placeholder="Address" required>
+                            <div class="invalid-feedback">
+                                Please supply your street address.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row pt-3 pe-2">
+                    <div class="col-md-3 text-center fw-bold" id="d6">City</div>
+                    <div class="col-md-9">
+                        <div class="input-group has-validation">
+                            <span class="input-group-text">
+                                <i class="fa-solid fa-house"></i>
+                            </span>
+                            <input type="text" id="t6" class="form-control"  placeholder="City" required>
+                            <div class="invalid-feedback">
+                                Please supply your city.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="row pt-3 pe-2">
+                    <div class="col-3 text-center fw-bold">State</div>
+                    <div class="col-9">
+                        <div class="input-group">
+                            <span class="input-group-text">
+                                <i class="fa-solid fa-list"></i>
+                            </span>
+                            <select class="form-select" id="t7" id="validationCustom04" required>
+                                <option selected disabled value="">Choose...</option>
+                                <option>Tamil Nadu</option>
+                                <option>Uttar Pradesh</option>
+                            </select>
+                            <div class="invalid-feedback">
+                                Please select a state
+                            </div>                          
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row pt-3 pe-2">
+                    <div class="col-md-3 text-center fw-bold">Do you have a hosting?</div>
+                    <div class=" col-md-9 form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" required>
+                        <label class="form-check-label" for="flexRadioDefault1">
+                        Yes
+                        </label><br>
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                        <label class="form-check-label" for="flexRadioDefault1">
+                        No
+                        </label>
+                    </div>
+                </div>
+                
+                <div class="row pt-3 pe-2">
+                    <div class="col-md-3 text-center fw-bold">Project Description</div>
+                    <div class=" col-md-9">
+                        <div class="input-group">
+                            <span class="input-group-text">
+                                <i class="fa-solid fa-pen"></i>
+                            </span>
+                            <textarea class="form-control" placeholder="Project Description" required></textarea>
+                            <div class="invalid-feedback">
+                                Please provide the project description.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row pt-3 pe-2 mx-auto">
+                    <div class="col-12 text-center">
+                    <button class="btn btn-warning" type="submit" onclick="validation()">Send&nbsp;<i class="fa-solid fa-paper-plane"></i></button>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <script>
+            // Example starter JavaScript for disabling form submissions if there are invalid fields
+            (() => {
+            'use strict'
+
+            // Fetch all the forms we want to apply custom Bootstrap validation styles to
+            const forms = document.querySelectorAll('.needs-validation')
+
+            // Loop over them and prevent submission
+            Array.from(forms).forEach(form => {
+                form.addEventListener('submit', event => {
+                if (!form.checkValidity()) {
+                    event.preventDefault()
+                    event.stopPropagation()
+                }
+
+                form.classList.add('was-validated')
+                }, false)
+            })
+            })()
+        </script>
+        <script>
+            function validation()
+            {
+                var fname=document.getElementById('t1').value;
+                var lname=document.getElementById('t2').value;
+                var em=document.getElementById('t3').value;
+                var ph=document.getElementById('t4').value;
+                var addr=document.getElementById('t5').value;
+                var ct=document.getElementById('t6').value;
+
+                if(fname.length==0)
+                    document.getElementById('d1').style.color="red";
+                else
+                    document.getElementById('d1').style.color="black";
+                
+                    if(lname.length==0)
+                    document.getElementById('d2').style.color="red";
+                else
+                    document.getElementById('d2').style.color="black";
+
+                if(em.length==0)
+                    document.getElementById('d3').style.color="red";
+                else
+                    document.getElementById('d3').style.color="black";
+
+                    if(ph.length==0)
+                    document.getElementById('d4').style.color="red";
+                else
+                    document.getElementById('d4').style.color="black";
+
+                    if(addr.length==0)
+                    document.getElementById('d5').style.color="red";
+                else
+                    document.getElementById('d5').style.color="black";
+
+                if(ct.length==0)
+                    document.getElementById('d6').style.color="red";
+                else
+                    document.getElementById('d6').style.color="black";
+            }
+        </script>
+    </body>
+</html>
